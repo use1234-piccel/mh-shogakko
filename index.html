@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MH小学校</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🏫 MH小学校</h1>
+  <p>学校ポータル</p>
+</header>
+
+<nav>
+  <button onclick="showPage('home')">🏠 ホーム</button>
+  <button onclick="showPage('news')">📢 お知らせ</button>
+  <button onclick="showPage('class')">🏫 クラス</button>
+  <button onclick="showPage('files')">📁 ファイル</button>
+  <button onclick="showPage('admin')">⚙️ 管理者</button>
+</nav>
+
+<main>
+
+<section id="home" class="page active">
+  <h2>ようこそ、MH小学校へ！</h2>
+  <p>学校の情報をまとめて管理できるポータルです。</p>
+
+  <div class="cards">
+    <div>📢<br><b>お知らせ</b></div>
+    <div>🏫<br><b>クラス</b></div>
+    <div>📁<br><b>資料</b></div>
+    <div>💬<br><b>コメント</b></div>
+  </div>
+</section>
+
+<section id="news" class="page">
+  <h2>📢 お知らせ</h2>
+
+  <textarea id="newsText"
+    placeholder="お知らせを書いてください"></textarea>
+
+  <button class="save" onclick="saveNews()">💾 保存</button>
+
+  <div id="newsList"></div>
+</section>
+
+<section id="class" class="page">
+  <h2>🏫 クラス</h2>
+
+  <div class="classbox">
+    <h3>1年1組</h3>
+    <p>テスト用クラス</p>
+  </div>
+
+  <div class="classbox">
+    <h3>2年1組</h3>
+    <p>テスト用クラス</p>
+  </div>
+</section>
+
+<section id="files" class="page">
+  <h2>📁 学校資料</h2>
+  <p>ここに学校の資料を追加できます。</p>
+
+  <input type="file" id="fileInput">
+</section>
+
+<section id="admin" class="page">
+  <h2>⚙️ 管理者</h2>
+
+  <div class="admin">
+    <p>管理者モード</p>
+    <p>アカウント管理：準備中</p>
+    <p>変更履歴：準備中</p>
+    <p>クラウド：準備中</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  MH小学校 Portal
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html
