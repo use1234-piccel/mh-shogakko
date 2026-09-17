@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f4f7fb;
+  color: #222;
+}
+
+header {
+  background: #2563eb;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+header p {
+  margin-bottom: 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px;
+  background: white;
+  justify-content: center;
+  box-shadow: 0 2px 8px #0001;
+}
+
+nav button,
+.save {
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 18px;
+  cursor: pointer;
+  background: #e8eefc;
+  font-size: 15px;
+}
+
+nav button:hover,
+.save:hover {
+  background: #d7e2ff;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 25px;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.cards div {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 3px 12px #0001;
+  font-size: 20px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 150px;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.classbox,
+.admin {
+  background: white;
+  padding: 20px;
+  margin: 12px 0;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px #0001;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
